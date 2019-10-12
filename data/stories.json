@@ -1,0 +1,46 @@
+{
+  "stories": [
+    {
+      "hed": "Japan Braces for Typhoon Hagibis, With Millions in Its Path",
+      "source": "nytimes.com",
+      "link": "https://www.nytimes.com/2019/10/10/world/asia/typhoon-japan.html",
+      "img": "./images/nytimes.png"
+    },
+    {
+      "hed": "Typhoon Japan plagues sports world: \"I have my speedboat ready\"",
+      "source": "nos.nl",
+      "link": "http://nos.nl",
+      "img": "./images/nos.png"
+    },
+    {
+      "hed": "Super typhoon Hagibis threatens major sporting events in Japan",
+      "source": "nrc.nl",
+      "link": "http://nos.nl",
+      "img": "./images/nic.png"
+    },
+    {
+      "hed": "Japan, typhoon Hagibis arrives: tomorrow's Formula 1 tests are canceled",
+      "source": "republica.it",
+      "link": "http://nos.nl",
+      "img": "./images/republica.png"
+    },
+    {
+      "hed": "Typhoon Hagibis is coming to Japan: \"It will be one of the worst in recent years\"",
+      "source": "corriere.it",
+      "link": "http://nos.nl",
+      "img": "./images/nic.png"
+    },
+    {
+      "hed": "Turkish Airlines 'Hagibis Typhoon' barrier to Japan flights",
+      "source": "haber.aero",
+      "link": "http://nos.nl",
+      "img": "./images/haber.png"
+    },
+    {
+      "hed": "Worrying about Typhoon: What happens to Formula 1 qualifying?",
+      "source": "tagesanzeiger.ch",
+      "link": "http://nos.nl",
+      "img": "./images/tager.png"
+    }
+  ]
+}

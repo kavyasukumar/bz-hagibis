@@ -1,0 +1,52 @@
+$serif: 'Merriweather', serif;
+$sans-serif: 'Archivo Narrow', sans-serif;
+
+.serif {
+font-family: $serif;
+}
+
+.sans-serif{
+font-family: $sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: $serif;
+  color: $header-color;
+  line-height: 1.8em;
+}
+
+h4, h5, h6 {
+  color: $header-color;
+  line-height: 1.8em;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding: 0;
+  margin-bottom: 6rem;
+}
+
+p, body {
+  font-family: $sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: $body-color;
+}
+
+.quote, .quote-cont {
+  font-family:  $sans-serif;
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  &.highlight {
+    color: $highlight-color;
+    font-size: 4.2rem;
+  }
+}
+.quote {
+  &::before {
+    content: '“';
+    font-size: 5rem;
+  }
+}

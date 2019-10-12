@@ -1,0 +1,54 @@
+#stories {
+  margin-top: 5rem;
+  width: 90%;
+}
+
+.story {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 36px;
+
+  img {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .story-deets {
+    padding-left: 20px;
+
+    h4 {
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: $highlight-color;
+          text-decoration: underline;
+        }
+      }
+      line-height: 1em;
+    }
+  }
+}
+
+#localStories {
+  img {
+    width: 90%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+}
+
+.storyImg{
+  width: 60%;
+  height: auto;
+  margin: auto;
+
+}
+
+#story2{
+  margin-top: 8rem;
+}

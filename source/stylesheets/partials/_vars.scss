@@ -1,0 +1,11 @@
+$rem-base: 24px;
+$gutter-size: $rem-base !default;
+
+$serif: 'Merriweather', serif;
+$sans-serif: 'Archivo Narrow', sans-serif;
+$monospace: monospace;
+
+$header-color: #262626;
+$body-color: #595959;
+$highlight-color: #798C35;
+$font-base: rem-calc($rem-base);

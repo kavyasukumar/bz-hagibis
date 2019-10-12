@@ -1,0 +1,50 @@
+$xsmall-breakpoint: 320px !default;
+$small-breakpoint: 720px !default;
+$medium-breakpoint: 1024px !default;
+$large-breakpoint: 1440px !default;
+$xlarge-breakpoint: 1920px !default;
+
+$xsmall-range: (0, $xsmall-breakpoint);
+$small-range: ($xsmall-breakpoint + 1, $small-breakpoint);
+$medium-range: ($small-breakpoint  + 1, $medium-breakpoint);
+$large-range: ($medium-breakpoint + 1, $large-breakpoint);
+$xlarge-range: ($large-breakpoint  + 1, $xlarge-breakpoint);
+$xxlarge-range: ($xlarge-breakpoint + 1, 99999999px);
+
+$screen: 'only screen';
+
+$landscape: '#{$screen} and (orientation: landscape)';
+$portrait: '#{$screen} and (orientation: portrait)';
+
+$xsmall-up: $screen;
+$xsmall-only: '#{$screen} and (max-width: #{upper-bound($xsmall-range)})';
+$xsmall-down: $xsmall-only;
+
+$small-up: '#{$screen} and (min-width:#{lower-bound($small-range)})';
+$small-only: '#{$screen} and (min-width:#{lower-bound($small-range)}) and (max-width:#{upper-bound($small-range)})';
+$small-down: '#{$screen} and (max-width:#{upper-bound($small-range)})';
+
+$medium-up: '#{$screen} and (min-width:#{lower-bound($medium-range)})';
+$medium-only: '#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})';
+$medium-down: '#{$screen} and (max-width:#{upper-bound($medium-range)})';
+
+$large-up: '#{$screen} and (min-width:#{lower-bound($large-range)})';
+$large-only: '#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})';
+$large-down: '#{$screen} and (max-width:#{upper-bound($large-range)})';
+
+$xlarge-up: '#{$screen} and (min-width:#{lower-bound($xlarge-range)})';
+$xlarge-only: '#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})';
+$xlarge-down: '#{$screen} and (max-width:#{upper-bound($xlarge-range)})';
+
+$xxlarge-up: '#{$screen} and (min-width:#{lower-bound($xxlarge-range)})';
+$xxlarge-only: $xxlarge-up;
+$xxlarge-down: $screen;
+
+$retina: (
+ '#{$screen} and (-webkit-min-device-pixel-ratio: 2)',
+ '#{$screen} and (min--moz-device-pixel-ratio: 2)',
+ '#{$screen} and (-o-min-device-pixel-ratio: 2/1)',
+ '#{$screen} and (min-device-pixel-ratio: 2)',
+ '#{$screen} and (min-resolution: 192dpi)',
+ '#{$screen} and (min-resolution: 2dppx)'
+);

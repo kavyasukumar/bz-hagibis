@@ -1,0 +1,76 @@
+$total-columns: 12 !default;
+
+@function grid-calc($colNumber, $totalColumns)
+{
+    $result: percentage(($colNumber / $totalColumns ));
+    @if $result == 0%
+    {
+        $result: 0;
+    }
+
+    @return $result;
+}
+
+@mixin grid-columns($size)
+{
+    @for $i from 1 through $total-columns
+    {
+        .#{$size}-#{$i}
+        {
+            box-sizing: border-box;
+            width: grid-calc($i, $total-columns);
+            padding: 0 $gutter-size / 2;
+
+            flex: 0 0 auto;
+        }
+
+        .#{$size}-offset-#{$i}
+        {
+            margin-left: grid-calc($i, $total-columns);
+        }
+    }
+}
+
+.row
+{
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    &+ .row {
+      margin-top: 0.5rem;
+    }
+}
+
+@if $total-columns > 0
+{
+    @include grid-columns($size: xsmall);
+
+    @media #{$small-up}
+    {
+        @include grid-columns($size: small);
+    }
+
+    @media #{$medium-up}
+    {
+        @include grid-columns($size: medium);
+    }
+
+    @media #{$large-up}
+    {
+        @include grid-columns($size: large);
+    }
+
+    @media #{$xlarge-up}
+    {
+        @include grid-columns($size: xlarge);
+    }
+
+    @media #{$xxlarge-up}
+    {
+        @include grid-columns($size: xxlarge);
+    }
+}

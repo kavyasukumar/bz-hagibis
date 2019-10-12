@@ -1,0 +1,12 @@
+
+<div id="newsStories">
+<% data.stories.stories.each do |story| %>
+  <div class="story">
+    <img src="<%= story['img']%>">
+    <div class="story-deets">
+      <h4><a href="<%=story['link']%>"><%= story['hed']%></a></h4>
+      <p class="source"><%= story['source']%></p>
+    </div>
+  </div>
+<%end%>
+</div>

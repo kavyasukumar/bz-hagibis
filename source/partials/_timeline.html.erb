@@ -1,0 +1,10 @@
+<section id="timeline" class="row">
+<div id="timelineParent" class="medium-9">
+  <%data.timeline.each do |t| %>
+   <div class="timespot">
+     <p class="date"><%= t['time'] %></p>
+     <p class="event"><%= t['event'] %></p>
+   </div>
+  <%end%>
+</div>
+</section>
