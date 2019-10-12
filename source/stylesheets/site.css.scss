@@ -48,9 +48,6 @@ section {
     width: 2px;
   }
   &.dark {
-    &::after{
-      height: 1px;
-    }
     &::before{
       width:1px;
     }
@@ -116,11 +113,11 @@ section {
 }
 
 iframe {
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: 650px;
 }
 
-// #facts {
-//   margin-top: 6rem;
-// }
+#footer {
+  border-top: 2px solid $header-color;
+}
